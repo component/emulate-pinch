@@ -1,0 +1,22 @@
+{
+  "name": "mouse-pinch",
+  "repo": "matthewmueller/mouse-pinch",
+  "description": "emulate pinch with your mouse",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/domify": "*",
+    "component/events": "*",
+    "component/emitter": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "mouse-pinch.css"
+  ]
+}
