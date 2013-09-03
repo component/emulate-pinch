@@ -7,7 +7,7 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install matthewmueller/emulate-pinch
+    $ component install component/emulate-pinch
 
 ## Example
 
