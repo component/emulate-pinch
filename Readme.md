@@ -9,6 +9,18 @@
 
     $ component install matthewmueller/emulate-pinch
 
+## Example
+
+```js
+var pinch = require('emulate-pinch');
+
+pinch(img, function(e) {
+  dot.style.left = e.x + 'px';
+  dot.style.top = e.y + 'px';
+  dot.style['-webkit-transform'] = 'scale(' + e.scale + ')';
+});
+```
+
 ## API
 
 ### Pinch(el, fn)
