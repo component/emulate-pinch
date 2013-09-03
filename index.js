@@ -8,22 +8,22 @@ var Emitter = require('emitter');
 var tpl = domify(require('./template'));
 
 /**
- * Export `MousePinch`
+ * Export `EmulatePinch`
  */
 
-module.exports = MousePinch;
+module.exports = EmulatePinch;
 
 /**
- * Initialize `MousePinch`
+ * Initialize `EmulatePinch`
  *
  * @param {Element} el
  * @param {Function} fn
- * @return {MousePinch}
+ * @return {EmulatePinch}
  * @api public
  */
 
-function MousePinch(el, fn) {
-  if (!(this instanceof MousePinch)) return new MousePinch(el, fn);
+function EmulatePinch(el, fn) {
+  if (!(this instanceof EmulatePinch)) return new EmulatePinch(el, fn);
   this.el = el;
   this.fn = fn || function(){};
   this.midpoint = null;
@@ -37,10 +37,10 @@ function MousePinch(el, fn) {
  * Click
  *
  * @param {Event} e
- * @return {MousePinch}
+ * @return {EmulatePinch}
  */
 
-MousePinch.prototype.onclick = function(e) {
+EmulatePinch.prototype.onclick = function(e) {
   var self = this;
   var x = e.pageX;
   var y = e.pageY;
@@ -82,6 +82,18 @@ MousePinch.prototype.onclick = function(e) {
   });
 
   return this;
+};
+
+/**
+ * Unbind
+ */
+
+EmulatePinch.prototype.unbind = function() {
+  for (var i = 0, len = this.fingers.length; i < len; i++) {
+    this.fingers[i].remove();
+  }
+
+  this.events.unbind();
 };
 
 /**

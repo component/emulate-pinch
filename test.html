@@ -2,7 +2,7 @@
 <head>
   <title>pinch component</title>
   <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no" />
-  <link rel="stylesheet" href="../build/build.css">
+  <link rel="stylesheet" href="build/build.css">
   <style>
     html, body {
       margin: 0;
@@ -60,14 +60,14 @@
   </style>
 </head>
 <body>
-  <h2>place two fingers onto the image</h2>
+  <h2>Click in two spots on the image, drag "fingers" around</h2>
   <div id="container">
     <div id="img"></div>
     <div class="dot"></div>
   </div>
-  <script src="../build/build.js" type="text/javascript"></script>
+  <script src="build/build.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var pinch = require('mouse-pinch');
+    var pinch = require('emulate-pinch');
     var img = document.querySelector('#img');
     var dot = document.querySelector('.dot');
 

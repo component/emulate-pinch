@@ -1,5 +1,5 @@
 
-build: components index.js mouse-pinch.css template.js
+build: components index.js emulate-pinch.css template.js
 	@component build --dev
 
 template.js: template.html

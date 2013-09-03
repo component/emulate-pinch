@@ -1,6 +1,6 @@
 {
-  "name": "mouse-pinch",
-  "repo": "matthewmueller/mouse-pinch",
+  "name": "emulate-pinch",
+  "repo": "matthewmueller/emulate-pinch",
   "description": "emulate pinch with your mouse",
   "version": "0.0.1",
   "keywords": [],
@@ -17,6 +17,6 @@
     "template.js"
   ],
   "styles": [
-    "mouse-pinch.css"
+    "emulate-pinch.css"
   ]
 }

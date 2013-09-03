@@ -1,17 +1,19 @@
 
-# mouse-pinch
+# emulate-pinch
 
-  emulate pinch with your mouse
+  emulate [component/pinch](http://github.com/component/pinch) with your mouse
 
 ## Installation
 
   Install with [component(1)](http://component.io):
 
-    $ component install matthewmueller/mouse-pinch
+    $ component install matthewmueller/emulate-pinch
 
 ## API
 
+### Pinch(el, fn)
 
+Same API as [component/pinch](http://github.com/component/pinch).
 
 ## License
 
